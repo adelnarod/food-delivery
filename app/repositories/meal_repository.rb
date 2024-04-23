@@ -21,7 +21,8 @@ class MealRepository
   end
 
   def find(id)
-    @meals.find { |meal| meal.id == id }
+    meal = @meals.find { |meal| meal.id == id }
+    return meal
   end
 
   private
